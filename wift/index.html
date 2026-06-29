@@ -25,7 +25,8 @@
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body { 
             font-family: 'Roboto Condensed', sans-serif; 
-            background-color: var(--PRIMARY_BG); 
+            background-color: var(--PRIMARY_BG);
+            position: relative;
             color: var(--TEXT_MAIN);
             line-height: 1.6;
         }
@@ -34,6 +35,7 @@
         .top-bar {
             background: var(--SURFACE_3);
             padding: 8px 5%;
+            border-bottom: 1px solid var(--PANEL_BORDER);
             font-size: 0.85rem;
             color: var(--TEXT_MUTED);
             display: flex;
@@ -46,8 +48,7 @@
         .main-nav {
             position: sticky;
             top: 0;
-            background: var(--PRIMARY_BG);
-            border-bottom: 1px solid var(--PANEL_BORDER);
+            background: transparent;
             padding: 15px 5%;
             display: flex;
             justify-content: space-between;
@@ -75,9 +76,9 @@
         }
         .hero-bg {
             position: absolute;
-            top: 0; left: 0; right: 0; bottom: 0;
-            background: url('./assets/WIFT_ICON_Cleanpng.png') center/contain no-repeat;
-            opacity: 0.12;
+            top: 0; left: 0; right: 0; height: 100vh;
+background: url('./assets/WIFT_ICON_Cleanpng.png') center 60%/1800% no-repeat;
+opacity: 0.08;
             filter: blur(2px);
             z-index: 0;
         }
@@ -142,8 +143,8 @@
         </div>
     </nav>
 
+    <div class="hero-bg"></div>
     <header class="hero">
-        <div class="hero-bg"></div>
         <div class="hero-content">
     <h1>WIFT</h1>
     <p class="subtitle">Where Is That File?</p>
