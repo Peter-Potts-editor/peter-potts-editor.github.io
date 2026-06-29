@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WIFT - Where Is That File?</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --PRIMARY_BG: #12161A;
+            --PANEL_BORDER: #1F262E;
+            --UI_PROGRESS: #00A896;
+            --ACTIVE_ACTION: #00E5FF;
+            --TEXT_MAIN: #E2E8F0;
+            --TEXT_MUTED: #64748B;
+            --SURFACE_3: #0A0D12;
+            --BORDER_MID: #1E2730;
+            --BORDER_RAISED: #2A3545;
+            --RADIUS_SM: 6px;
+            --RADIUS_MD: 10px;
+            --RADIUS_LG: 16px;
+            --ACTIVE_GLOW: 0 0 10px rgba(0, 229, 255, 0.3);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+            font-family: 'Roboto Condensed', sans-serif; 
+            background-color: var(--PRIMARY_BG); 
+            color: var(--TEXT_MAIN);
+            line-height: 1.6;
+        }
+
+        .top-bar {
+            background: var(--SURFACE_3);
+            padding: 8px 5%;
+            font-size: 0.85rem;
+            color: var(--TEXT_MUTED);
+            display: flex;
+            justify-content: flex-end;
+            gap: 20px;
+        }
+        .top-bar a { color: var(--TEXT_MUTED); text-decoration: none; }
+
+        .main-nav {
+            position: sticky;
+            top: 0;
+            background: var(--PRIMARY_BG);
+            border-bottom: 1px solid var(--PANEL_BORDER);
+            padding: 15px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 100;
+        }
+        .logo { font-weight: 700; font-size: 1.5rem; }
+        .nav-links { display: flex; align-items: center; gap: 25px; }
+        .nav-links a { text-decoration: none; color: var(--TEXT_MAIN); }
+        .btn-ghost {
+            border: 1px solid var(--ACTIVE_ACTION);
+            padding: 8px 16px;
+            border-radius: var(--RADIUS_SM);
+            color: var(--ACTIVE_ACTION);
+            transition: all 0.3s;
+        }
+        .btn-ghost:hover { background: var(--ACTIVE_ACTION); color: var(--PRIMARY_BG); }
+
+        .hero {
+            padding: 80px 5%;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .hero-bg {
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: url('./assets/WIFT_ICON_Cleanpng.png') center/contain no-repeat;
+            opacity: 0.08;
+            filter: blur(2px);
+            z-index: 0;
+        }
+        .hero-content { position: relative; z-index: 1; }
+        h1 { font-size: 3rem; margin-bottom: 10px; }
+        .subtitle { color: var(--TEXT_MUTED); margin-bottom: 30px; font-size: 1.2rem; }
+        .download-btns { display: flex; justify-content: center; gap: 20px; margin-bottom: 20px; }
+        .btn-main {
+            padding: 15px 30px;
+            background: transparent;
+            border: 2px solid var(--ACTIVE_ACTION);
+            color: var(--ACTIVE_ACTION);
+            border-radius: var(--RADIUS_MD);
+            text-decoration: none;
+            font-weight: 700;
+            box-shadow: var(--ACTIVE_GLOW);
+        }
+
+        .features { padding: 80px 5%; display: grid; grid-template-columns: 1fr 1fr; gap: 50px; }
+        .feature-card { 
+            padding: 30px; 
+            border: 1px solid var(--BORDER_MID); 
+            border-radius: var(--RADIUS_MD); 
+        }
+        .feature-item { margin-bottom: 30px; }
+        .badge { 
+            display: inline-block; padding: 2px 8px; border: 1px solid var(--BORDER_MID); 
+            border-radius: var(--RADIUS_SM); font-size: 0.8rem; color: var(--TEXT_MUTED); margin-right: 5px;
+        }
+
+        .pricing-strip {
+            background: var(--SURFACE_3);
+            padding: 40px 5%;
+            text-align: center;
+            border: 1px solid var(--BORDER_MID);
+            border-radius: var(--RADIUS_MD);
+            margin: 0 5% 40px 5%;
+        }
+
+        footer { padding: 40px 5%; color: var(--TEXT_MUTED); font-size: 0.9rem; border-top: 1px solid var(--PANEL_BORDER); }
+        footer a { color: var(--TEXT_MUTED); text-decoration: none; }
+    </style>
+</head>
+<body>
+
+    <div class="top-bar">
+        <a href="#features">Features</a> · <a href="/wift/pricing">Pricing</a> · <a href="/wift/privacy">Privacy</a> · <a href="/wift/terms">Terms</a> · <a href="/wift/refund">Refund</a>
+    </div>
+
+    <nav class="main-nav">
+        <div class="logo">WIFT</div>
+        <div class="nav-links">
+            <a href="#features">Features</a>
+            <a href="/wift/pricing">Pricing</a>
+            <a href="#" class="btn-ghost">Download</a>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-content">
+            <h1>WIFT</h1>
+            <p class="subtitle">Where Is That File?</p>
+            <p style="max-width: 600px; margin: 0 auto 30px;">All those hard drives on the shelf behind you — do you know what's on them? WIFT lets you mount and eject each one, building a searchable index. After that, every drive on that shelf is searchable as if it were plugged in.</p>
+            <div class="download-btns">
+                <a href="#" class="btn-main">Download for Mac</a>
+                <a href="#" class="btn-main">Download for Windows</a>
+            </div>
+            <p style="color: var(--TEXT_MUTED);">Private Beta — invite only · Free to start</p>
+        </div>
+    </header>
+
+    <section class="features" id="features">
+        <div class="feature-card">
+            <h2>Always Free</h2>
+            <br>
+            <div class="feature-item"><h3>Drive Indexing</h3><p>Mount and eject drives and WIFT builds a permanent searchable record — no manual cataloguing required.</p></div>
+            <div class="feature-item"><h3>Offline Search</h3><p>Search any drive whether it's connected or not. Find the file, then find the drive.</p></div>
+            <div class="feature-item"><h3>Miller Column Navigation</h3><p>Browse your indexed drives the way macOS intended — fast, deep, no clicking into folders blindly.</p></div>
+            <div class="feature-item"><h3>Drive Health Monitoring</h3><p>At-a-glance status for every scanned volume. Capacity, file system, mount state — always visible.</p></div>
+            <div class="feature-item"><h3>Library Integration</h3><p>Licence and rights data pulled directly from the library's own catalogue for use in your cue sheets and clearance logs. Integrated API connection.</p></div>
+            <div class="feature-item"><h3>Deep Scan</h3><p>ffprobe-powered metadata extraction — codec, duration, audio channels, colour profile — written to your local database.</p></div>
+        </div>
+        <div class="feature-card">
+            <h2>Pro & Add-ons</h2>
+            <br>
+            <div class="feature-item">
+                <span class="badge">$5 one-time</span><span class="badge">Pro</span>
+                <h3>Music Cue Sheet Export</h3>
+                <p>Generate broadcast-ready music cue sheets directly from your indexed media. ISRC extraction included.</p>
+            </div>
+            <div class="feature-item">
+                <span class="badge">$5 one-time</span><span class="badge">Pro</span>
+                <h3>Stock Clearance Log</h3>
+                <p>Log and export stock footage clearance records alongside your cue sheets.</p>
+            </div>
+            <div class="feature-item">
+                <span class="badge">$1 one-time</span><span class="badge">Facility</span>
+                <h3>Database Export</h3>
+                <p>Export your full WIFT index as a portable database. Import is always free.</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="pricing-strip">
+        <p>Free forever for core drive management. Pro from $10/month — more tiers coming.</p>
+        <br>
+        <a href="/wift/pricing" style="color: var(--ACTIVE_ACTION);">View full pricing →</a>
+    </div>
+
+    <footer>
+        <p><a href="/wift/privacy">Privacy Policy</a> · <a href="/wift/terms">Terms & Conditions</a> · <a href="/wift/refund">Refund Policy</a></p>
+        <p>© 2026 Peter Potts · WIFT · Available for macOS and Windows</p>
+        <p style="margin-top:10px;">WIFT is currently in Private Beta. Features and pricing subject to change.</p>
+    </footer>
+
+</body>
+</html>
