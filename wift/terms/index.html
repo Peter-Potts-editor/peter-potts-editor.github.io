@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms and Conditions - WIFT</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --PRIMARY_BG: #12161A;
+            --PANEL_BORDER: #1F262E;
+            --UI_PROGRESS: #00A896;
+            --ACTIVE_ACTION: #00E5FF;
+            --TEXT_MAIN: #E2E8F0;
+            --TEXT_MUTED: #64748B;
+            --SURFACE_3: #0A0D12;
+            --BORDER_MID: #1E2730;
+            --BORDER_RAISED: #2A3545;
+            --RADIUS_SM: 6px;
+            --RADIUS_MD: 10px;
+            --RADIUS_LG: 16px;
+            --ACTIVE_GLOW: 0 0 10px rgba(0, 229, 255, 0.3);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+            font-family: 'Roboto Condensed', sans-serif; 
+            background-color: var(--PRIMARY_BG);
+            position: relative;
+            color: var(--TEXT_MAIN);
+            line-height: 1.6;
+        }
+
+        /* Top Bar */
+        .top-bar {
+            background: var(--SURFACE_3);
+            padding: 8px 5%;
+            border-bottom: 1px solid var(--PANEL_BORDER);
+            font-size: 0.85rem;
+            color: var(--TEXT_MUTED);
+            display: flex;
+            justify-content: flex-end;
+            gap: 20px;
+        }
+        .top-bar a { color: var(--TEXT_MUTED); text-decoration: none; }
+
+        /* Main Nav */
+        .main-nav {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            padding: 15px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo { font-weight: 700; font-size: 1.5rem; }
+        .nav-links { display: flex; align-items: center; gap: 25px; }
+        .nav-links a { text-decoration: none; color: var(--TEXT_MAIN); }
+        .btn-ghost {
+            border: 1px solid var(--ACTIVE_ACTION);
+            padding: 8px 16px;
+            border-radius: var(--RADIUS_SM);
+            color: var(--ACTIVE_ACTION);
+            transition: all 0.3s;
+        }
+        .btn-ghost:hover { background: var(--ACTIVE_ACTION); color: var(--PRIMARY_BG); }
+
+        /* Content Container */
+        .content-container {
+            max-width: 720px;
+            margin: 40px auto;
+            padding: 0 5%;
+        }
+        h1 { margin-bottom: 5px; }
+        .subtitle { color: var(--TEXT_MUTED); margin-bottom: 40px; }
+        h2 { margin: 30px 0 15px; }
+        h3 { margin: 20px 0 10px; }
+        ul { margin-left: 20px; margin-bottom: 20px; }
+        li { margin-bottom: 10px; }
+        hr { border: 0; border-top: 1px solid #1F262E; margin: 40px 0; }
+
+        /* Footer */
+        footer { 
+            padding: 40px 5%; 
+            color: var(--TEXT_MUTED); 
+            font-size: 0.9rem; 
+            border-top: 1px solid var(--PANEL_BORDER); 
+            text-align: center; 
+        }
+        footer a { color: var(--TEXT_MUTED); text-decoration: none; }
+    </style>
+</head>
+<body>
+
+    <div class="top-bar">
+        <a href="/wift/#features">Features</a> · <a href="/wift/pricing">Pricing</a> · <a href="/wift/privacy">Privacy</a> · <a href="/wift/terms">Terms</a> · <a href="/wift/refund">Refund</a>
+    </div>
+
+    <nav class="main-nav">
+        <div class="logo">WIFT</div>
+        <div class="nav-links">
+            <a href="/wift/#features">Features</a>
+            <a href="/wift/pricing">Pricing</a>
+            <a href="/wift/" class="btn-ghost">Download</a>
+        </div>
+    </nav>
+
+    <main class="content-container">
+        <h1>Terms and Conditions</h1>
+        <p class="subtitle">Last updated: June 2026</p>
+
+        <p>These Terms and Conditions ("Terms") govern your use of WIFT ("Where Is That File?"), a desktop media asset management application ("the Software"). By installing or using the Software, you agree to these Terms in full.</p>
+        <p>If you do not agree to these Terms, do not install or use the Software.</p>
+
+        <hr>
+
+        <h2>1. Who We Are</h2>
+        <p>WIFT is developed and operated by Peter John Potts, trading as an individual software developer ("we", "us", "our").</p>
+        <p><strong>Contact:</strong><br>peter.potts.editor@gmail.com</p>
+
+        <hr>
+
+        <h2>2. Acceptance of Terms</h2>
+        <p>By downloading, installing, or using WIFT, you confirm that:</p>
+        <ul>
+            <li>You are aged 18 or over, or have the consent of a parent or legal guardian</li>
+            <li>You have the legal authority to enter into this agreement on behalf of yourself or your organisation</li>
+            <li>You have read and understood these Terms and agree to be bound by them</li>
+        </ul>
+        <p>These Terms form a legally binding agreement between you and Peter John Potts. If you are purchasing WIFT on behalf of a company or organisation, these Terms bind that entity.</p>
+
+        <hr>
+
+        <h2>3. Licence Grant</h2>
+        <p>Subject to your compliance with these Terms and payment of any applicable fees, we grant you a limited, non-exclusive, non-transferable, revocable licence to install and use WIFT on devices you own or control, for your own internal professional or personal purposes.</p>
+        <p>This licence does not permit you to:</p>
+        <ul>
+            <li>Copy, modify, adapt, or create derivative works of the Software</li>
+            <li>Reverse engineer, decompile, or disassemble the Software</li>
+            <li>Redistribute, resell, sublicense, or transfer the Software or your licence to any third party</li>
+            <li>Use the Software for any unlawful purpose</li>
+            <li>Remove or alter any proprietary notices or labels on the Software</li>
+        </ul>
+        <p>The Software is licensed, not sold. All rights not expressly granted in these Terms are reserved by Peter John Potts.</p>
+
+        <h3>Licence Seats and Portability</h3>
+        <p><strong>Pro tier</strong><br>Your Pro licence permits installation on up to 2 devices that you personally own or control. If you replace a device, WIFT will prompt you to deactivate an existing installation before activating on the new machine. No manual transfer request is required.</p>
+        <p><strong>Facility tier</strong><br>The Facility tier licence is seat-based. A minimum of 5 seats must be purchased. Seats are fungible within your organisation — they are not tied to named individuals. Additional seats may be purchased in increments via your account dashboard.</p>
+        <p><strong>Studio tier</strong><br>The Studio tier licence is seat-based with named user assignment. Seat allocation is agreed directly with Peter John Potts at the time of purchase. Named user assignment provides audit trail and database management benefits for larger organisations. Seat reassignment (for example when a staff member leaves) is managed via your account dashboard or by contacting peter.potts.editor@gmail.com.</p>
+
+        <hr>
+
+        <h2>4. Subscription Tiers and Features</h2>
+        <p>WIFT is available under the following tiers. Features available at each tier are as described on our website at the time of purchase at: peter-potts-editor.github.io/wift/pricing</p>
+
+        <h3>Free Tier</h3>
+        <p>The Free tier provides full access to WIFT's core drive cataloguing and file search functionality at no charge. No payment details are required.</p>
+
+        <h3>Pro Tier</h3>
+        <p>$10/month or $100/year</p>
+        <p>The Pro tier provides access to all Free tier features plus export functionality and additional professional features as described on the pricing page.</p>
+        <p>Includes 2 licence seats for devices personally owned or controlled by the licence holder.</p>
+
+        <h3>Facility Tier</h3>
+        <p>$70/month or $700/year (minimum 5 seats) — not yet available</p>
+        <p>The Facility tier is a planned seat-based licence intended for professional post-production facilities, currently in development. Seats will be fungible within the purchasing organisation. Each seat will permit one simultaneous installation of WIFT on one machine. Pricing shown is indicative and will be confirmed at launch; it will not exceed the figure shown here.</p>
+
+        <h3>Studio Tier</h3>
+        <p>$200/month or $2000/year (seat allocation negotiated directly) — not yet available</p>
+        <p>The Studio tier is a planned seat-based licence for larger organisations with named user assignment, currently in development. Contact peter.potts.editor@gmail.com for Studio tier enquiries and onboarding. Pricing shown is indicative and will be confirmed at launch; it will not exceed the figure shown here.</p>
+
+        <h3>One-Time Purchases</h3>
+        <p>The following features are available as one-time purchases independently of subscription tier:</p>
+        <ul>
+            <li>Cue sheet export — $5</li>
+            <li>Database export — $1 (import is free)</li>
+        </ul>
+        <p>Pricing for one-time purchases is subject to confirmation with our payment processor. We will update this page if pricing changes before launch.</p>
+
+        <hr>
+
+        <h2>5. Payment, Billing, and Cancellation</h2>
+        <p>All payments are processed by Paddle (paddle.com), our payment processor and Merchant of Record. By making a purchase you agree to Paddle's terms of service in addition to these Terms.</p>
+        <p><strong>Subscriptions</strong><br>Subscription fees are billed in advance on a monthly or annual basis. Your subscription will renew automatically unless cancelled before the renewal date.</p>
+        <p>Annual subscriptions represent a saving equivalent to 2 months of the monthly rate across all tiers.</p>
+        <p>To cancel your subscription, log in to your Paddle account at paddle.com or contact Paddle buyer support at paddle.com/support. Cancellation takes effect at the end of the current billing period. You will retain access to your tier features until that date.</p>
+        <p>We do not offer refunds for partial subscription periods. Please refer to our Refund Policy for full details at: peter-potts-editor.github.io/wift/refund</p>
+        <p><strong>One-time purchases</strong><br>One-time purchases are charged once and do not renew. The purchased feature is activated immediately upon payment confirmation.</p>
+        <p><strong>Price changes</strong><br>We reserve the right to change subscription prices. We will give you at least 30 days notice of any price increase via the WIFT application or by email. Continued use of the Software after a price change constitutes acceptance of the new price.</p>
+        <p><strong>Failed payments</strong><br>If a payment fails, your subscription may be downgraded to the Free tier until payment is resolved. We will notify you via email if a payment failure affects your account.</p>
+
+        <hr>
+
+        <h2>6. Acceptable Use and Restrictions</h2>
+        <p>You agree to use WIFT only for lawful purposes and in accordance with these Terms.</p>
+        <p>You must not:</p>
+        <ul>
+            <li>Use WIFT to store, catalogue, or distribute content that infringes the intellectual property rights of any third party</li>
+            <li>Attempt to circumvent, disable, or interfere with any licence enforcement or access control mechanism in the Software</li>
+            <li>Share your licence credentials with any person not covered by your licence tier</li>
+            <li>Use the Software in any way that could damage, disable, or impair our systems or those of any third party</li>
+            <li>Attempt to gain unauthorised access to any part of the Software or its associated services</li>
+        </ul>
+        <p>Breach of this section may result in immediate termination of your licence without refund.</p>
+
+        <hr>
+
+        <h2>7. Disclaimers and Warranty</h2>
+        <p>WIFT is provided "as is" and "as available" without warranty of any kind, express or implied, including but not limited to warranties of merchantability, fitness for a particular purpose, or non-infringement.</p>
+        <p>We do not warrant that:</p>
+        <ul>
+            <li>The Software will meet your specific requirements</li>
+            <li>The Software will be uninterrupted, timely, secure, or error-free</li>
+            <li>Any errors in the Software will be corrected</li>
+        </ul>
+        <p>During the private beta period, the Software is under active development. You acknowledge that you may encounter incomplete features, bugs, or unexpected behaviour. We will make reasonable efforts to address reported issues promptly.</p>
+        <p>We make no warranty regarding the accuracy or completeness of any metadata retrieved via third-party API integrations (including but not limited to Shutterstock). You are responsible for verifying all metadata before use in any professional deliverable.</p>
+
+        <hr>
+
+        <h2>8. Limitation of Liability</h2>
+        <p>To the fullest extent permitted by applicable law, Peter John Potts shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising from your use of or inability to use WIFT, including but not limited to:</p>
+        <ul>
+            <li>Loss of data or database corruption</li>
+            <li>Loss of revenue or professional opportunity</li>
+            <li>Errors in cue sheets, clearance logs, or other exported documents</li>
+            <li>Costs arising from incorrect metadata retrieved via third-party APIs</li>
+        </ul>
+        <p>Our total liability to you for any claim arising from your use of WIFT shall not exceed the total amount paid by you to us in the 12 months preceding the claim.</p>
+        <p>Nothing in these Terms limits our liability for death or personal injury caused by negligence, fraud, or any other liability that cannot be excluded by law.</p>
+
+        <hr>
+
+        <h2>9. Termination</h2>
+        <h3>Termination by you</h3>
+        <p>You may terminate your use of WIFT at any time by cancelling your subscription via Paddle and uninstalling the Software. Termination does not entitle you to a refund except as set out in our Refund Policy at: peter-potts-editor.github.io/wift/refund</p>
+
+        <h3>Termination by us</h3>
+        <p>We reserve the right to suspend or terminate your licence immediately and without notice if you:</p>
+        <ul>
+            <li>Breach any provision of these Terms</li>
+            <li>Attempt to circumvent licence enforcement mechanisms</li>
+            <li>Use the Software for any unlawful purpose</li>
+        </ul>
+        <p>Upon termination your right to use the Software ceases immediately. Sections 7, 8, and 10 survive termination.</p>
+
+        <h3>Discontinuation of the Software</h3>
+        <p>In the event that WIFT is discontinued, we will provide at least 90 days notice via the application and by email. Subscribers will receive a pro-rata refund for any prepaid period beyond the discontinuation date.</p>
+
+        <hr>
+
+        <h2>10. Governing Law and Disputes</h2>
+        <p>These Terms are governed by the laws of England and Wales. Any dispute arising from these Terms or your use of WIFT shall be subject to the exclusive jurisdiction of the courts of England and Wales, except where applicable consumer protection law in your country of residence requires otherwise.</p>
+        <p>If you have a complaint or dispute, please contact us in the first instance at peter.potts.editor@gmail.com. We will make reasonable efforts to resolve any dispute informally before either party pursues formal legal proceedings.</p>
+
+        <hr>
+
+        <h2>11. General</h2>
+        <p><strong>Entire agreement</strong><br>These Terms, together with our Privacy Policy and Refund Policy, constitute the entire agreement between you and Peter John Potts regarding your use of WIFT.</p>
+        <p><strong>Severability</strong><br>If any provision of these Terms is found to be unenforceable, the remaining provisions continue in full force and effect.</p>
+        <p><strong>No waiver</strong><br>Our failure to enforce any provision of these Terms does not constitute a waiver of our right to enforce it in future.</p>
+        <p><strong>Assignment</strong><br>You may not assign your rights under these Terms to any third party without our written consent. We may assign our rights and obligations in the event of a business transfer or restructuring.</p>
+        <p>The current version of these Terms is always available at: peter-potts-editor.github.io/wift/terms</p>
+    </main>
+
+    <footer>
+        <p><a href="/wift/privacy">Privacy Policy</a> · <a href="/wift/terms">Terms & Conditions</a> · <a href="/wift/refund">Refund Policy</a></p>
+        <p>© 2026 Peter Potts · WIFT · Available for macOS and Windows</p>
+        <p style="margin-top:10px;">WIFT is currently in Private Beta. Features and pricing subject to change.</p>
+    </footer>
+
+</body>
+</html>
