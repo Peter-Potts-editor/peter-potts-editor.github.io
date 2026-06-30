@@ -1,0 +1,141 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Refund Policy - WIFT</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --PRIMARY_BG: #12161A;
+            --PANEL_BORDER: #1F262E;
+            --ACTIVE_ACTION: #00E5FF;
+            --TEXT_MAIN: #E2E8F0;
+            --TEXT_MUTED: #64748B;
+            --SURFACE_3: #0A0D12;
+            --BORDER_MID: #1E2730;
+            --RADIUS_SM: 6px;
+            --RADIUS_MD: 10px;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+            font-family: 'Roboto Condensed', sans-serif; 
+            background-color: var(--PRIMARY_BG);
+            color: var(--TEXT_MAIN);
+            line-height: 1.6;
+        }
+
+        /* Top Bar */
+        .top-bar {
+            background: var(--SURFACE_3);
+            padding: 8px 5%;
+            border-bottom: 1px solid var(--PANEL_BORDER);
+            font-size: 0.85rem;
+            color: var(--TEXT_MUTED);
+            display: flex;
+            justify-content: flex-end;
+            gap: 20px;
+        }
+        .top-bar a { color: var(--TEXT_MUTED); text-decoration: none; }
+
+        /* Main Nav */
+        .main-nav {
+            position: sticky;
+            top: 0;
+            background: transparent;
+            padding: 15px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 100;
+        }
+        .logo { font-weight: 700; font-size: 1.5rem; }
+        .nav-links { display: flex; align-items: center; gap: 25px; }
+        .nav-links a { text-decoration: none; color: var(--TEXT_MAIN); }
+
+        .btn-ghost {
+            border: 1px solid var(--ACTIVE_ACTION);
+            padding: 8px 16px;
+            border-radius: var(--RADIUS_SM);
+            color: var(--ACTIVE_ACTION);
+            transition: all 0.3s;
+        }
+        .btn-ghost:hover { background: var(--ACTIVE_ACTION); color: var(--PRIMARY_BG); }
+
+        /* Content Container */
+        .content-container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 0 5%;
+        }
+        .subtitle { color: var(--TEXT_MUTED); margin-bottom: 40px; }
+        h1 { margin-bottom: 20px; }
+        h2 { margin: 30px 0 15px 0; color: var(--ACTIVE_ACTION); }
+        p { margin-bottom: 15px; }
+        ul { margin-bottom: 15px; padding-left: 20px; }
+        li { margin-bottom: 10px; }
+        hr { border: 0; border-top: 1px solid var(--PANEL_BORDER); margin: 30px 0; }
+
+        /* Footer */
+        footer { padding: 40px 5%; color: var(--TEXT_MUTED); font-size: 0.9rem; border-top: 1px solid var(--PANEL_BORDER); text-align: center; }
+        footer a { color: var(--TEXT_MUTED); text-decoration: none; }
+    </style>
+</head>
+<body>
+
+    <div class="top-bar">
+        <a href="/wift/#features">Features</a> · <a href="/wift/pricing">Pricing</a> · <a href="/wift/privacy">Privacy</a> · <a href="/wift/terms">Terms</a> · <a href="/wift/refund">Refund</a>
+    </div>
+
+    <nav class="main-nav">
+        <div class="logo"><a href="/wift/" style="text-decoration:none; color:inherit;">WIFT</a></div>
+        <div class="nav-links">
+            <a href="/wift/#features">Features</a>
+            <a href="/wift/pricing">Pricing</a>
+            <a href="/wift/" class="btn-ghost">Download</a>
+        </div>
+    </nav>
+
+    <main class="content-container">
+        <h1>Refund Policy</h1>
+        <p class="subtitle">Last updated: June 2026</p>
+
+        <hr>
+
+        <h2>1. Our Payment Processor and Merchant of Record</h2>
+        <p>WIFT uses Paddle (paddle.com) as its payment processor and Merchant of Record. This means that all purchases of WIFT subscriptions, licences, and one-time features are transactions between you and Paddle, not between you and Peter John Potts directly.</p>
+        <p>As Merchant of Record, Paddle is responsible for processing all refund requests on our behalf.</p>
+
+        <h2>2. How to Request a Refund</h2>
+        <p>To request a refund for any WIFT purchase, contact Paddle directly:</p>
+        <p><strong>Paddle Buyer Support:</strong> <a href="https://paddle.com/support" style="color: var(--ACTIVE_ACTION);">paddle.com/support</a></p>
+        <p>Please have your order number or purchase email address ready. Paddle will handle your request in accordance with their Buyer Protection policy.</p>
+
+        <h2>3. Our Refund Position</h2>
+        <p>While Paddle handles all refund mechanics, our general position is:</p>
+        <p><strong>Subscriptions (Pro, Facility, Studio)</strong><br>
+        We offer a refund on the most recent billing period if requested within 14 days of the charge date. We do not offer refunds for partial subscription periods.</p>
+        <p><strong>One-time purchases</strong><br>
+        We offer a refund within 14 days of purchase if the feature does not function as described. Please contact us at peter.potts.editor@gmail.com before raising a refund request with Paddle so we can attempt to resolve the issue directly.</p>
+        <p><strong>Public Beta purchases</strong><br>
+        WIFT is currently in private beta — invite only. Payment and subscription functionality is live but the software is under active development. By purchasing during the public beta period, you acknowledge that you may encounter bugs or incomplete features. Our standard 14-day refund policy applies to all public beta purchases.</p>
+
+        <h2>4. Faulty or Misdescribed Software</h2>
+        <p>If WIFT does not perform as described on our website or in our marketing materials, you are entitled to a full refund regardless of the time elapsed since purchase. Contact us at peter.potts.editor@gmail.com in the first instance.</p>
+
+        <h2>5. Changes to This Policy</h2>
+        <p>We may update this Refund Policy from time to time. The current version is always available at: <a href="https://peter-potts-editor.github.io/wift/refund" style="color: var(--ACTIVE_ACTION);">peter-potts-editor.github.io/wift/refund</a></p>
+    </main>
+
+    <footer>
+        <p><a href="/wift/privacy">Privacy Policy</a> · <a href="/wift/terms">Terms & Conditions</a> · <a href="/wift/refund">Refund Policy</a></p>
+        <p>© 2026 Peter Potts · WIFT · Available for macOS and Windows</p>
+        <p style="margin-top:10px;">WIFT is currently in Private Beta. Features and pricing subject to change.</p>
+    </footer>
+
+</body>
+</html>
+
+```
