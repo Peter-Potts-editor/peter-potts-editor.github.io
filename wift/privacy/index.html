@@ -11,6 +11,7 @@
             --PANEL_BORDER: #1F262E;
             --UI_PROGRESS: #00A896;
             --ACTIVE_ACTION: #00E5FF;
+            --ACCENT_SOFT: #4DEDFF;
             --TEXT_MAIN: #E2E8F0;
             --TEXT_MUTED: #64748B;
             --SURFACE_3: #0A0D12;
@@ -46,15 +47,15 @@
 
         /* Main Nav */
         .main-nav {
-    position: sticky;
-    top: 0;
-    background: transparent;
-    padding: 15px 5%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 100;
-}
+            position: sticky;
+            top: 0;
+            background: transparent;
+            padding: 15px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 100;
+        }
         .logo { font-weight: 700; font-size: 1.5rem; }
         .nav-links { display: flex; align-items: center; gap: 25px; }
         .nav-links a { text-decoration: none; color: var(--TEXT_MAIN); }
@@ -74,9 +75,9 @@
             padding: 0 20px;
         }
         h1 { font-size: 3rem; margin-bottom: 10px; }
-        .last-updated { color: var(--TEXT_MUTED); margin-bottom: 40px; }
-        h2 { margin-top: 40px; margin-bottom: 20px; font-size: 1.8rem; }
-        h3 { margin-top: 25px; margin-bottom: 10px; color: var(--ACTIVE_ACTION); }
+        h2 { font-size: 1.8rem; color: var(--ACCENT_SOFT); margin-top: 40px; margin-bottom: 20px; }
+        h3 { font-size: 1.3rem; color: var(--ACCENT_SOFT); margin-top: 25px; margin-bottom: 10px; }
+        .subtitle { color: var(--TEXT_MUTED); margin-bottom: 40px; }
         p { margin-bottom: 15px; }
         ul { margin-left: 20px; margin-bottom: 20px; }
         li { margin-bottom: 8px; }
@@ -117,7 +118,7 @@
 
     <main class="content-container">
         <h1>Privacy Policy</h1>
-        <p class="last-updated"><strong>Last updated:</strong> June 2026</p>
+        <p class="subtitle"><strong>Last updated:</strong> June 2026</p>
 
         <hr>
 
@@ -246,6 +247,7 @@
     <footer>
         <p><a href="/wift/privacy">Privacy Policy</a> · <a href="/wift/terms">Terms & Conditions</a> · <a href="/wift/refund">Refund Policy</a></p>
         <p>© 2026 Peter Potts · WIFT · Available for macOS and Windows</p>
+        <p style="margin-top:10px;">WIFT is currently in Private Beta. Features and pricing subject to change.</p>
     </footer>
 
 </body>
