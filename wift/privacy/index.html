@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - WIFT</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --PRIMARY_BG: #12161A;
+            --PANEL_BORDER: #1F262E;
+            --UI_PROGRESS: #00A896;
+            --ACTIVE_ACTION: #00E5FF;
+            --TEXT_MAIN: #E2E8F0;
+            --TEXT_MUTED: #64748B;
+            --SURFACE_3: #0A0D12;
+            --BORDER_MID: #1E2730;
+            --BORDER_RAISED: #2A3545;
+            --RADIUS_SM: 6px;
+            --RADIUS_MD: 10px;
+            --RADIUS_LG: 16px;
+            --ACTIVE_GLOW: 0 0 10px rgba(0, 229, 255, 0.3);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+            font-family: 'Roboto Condensed', sans-serif; 
+            background-color: var(--PRIMARY_BG);
+            position: relative;
+            color: var(--TEXT_MAIN);
+            line-height: 1.6;
+        }
+
+        /* Top Bar */
+        .top-bar {
+            background: var(--SURFACE_3);
+            padding: 8px 5%;
+            border-bottom: 1px solid var(--PANEL_BORDER);
+            font-size: 0.85rem;
+            color: var(--TEXT_MUTED);
+            display: flex;
+            justify-content: flex-end;
+            gap: 20px;
+        }
+        .top-bar a { color: var(--TEXT_MUTED); text-decoration: none; }
+
+        /* Main Nav */
+        .main-nav {
+            position: sticky;
+            top: 0;
+            background: var(--PRIMARY_BG);
+            padding: 15px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 100;
+            border-bottom: 1px solid var(--PANEL_BORDER);
+        }
+        .logo { font-weight: 700; font-size: 1.5rem; }
+        .nav-links { display: flex; align-items: center; gap: 25px; }
+        .nav-links a { text-decoration: none; color: var(--TEXT_MAIN); }
+        .btn-ghost {
+            border: 1px solid var(--ACTIVE_ACTION);
+            padding: 8px 16px;
+            border-radius: var(--RADIUS_SM);
+            color: var(--ACTIVE_ACTION);
+            transition: all 0.3s;
+        }
+        .btn-ghost:hover { background: var(--ACTIVE_ACTION); color: var(--PRIMARY_BG); }
+
+        /* Legal Content */
+        .content-container {
+            max-width: 720px;
+            margin: 60px auto;
+            padding: 0 20px;
+        }
+        h1 { font-size: 3rem; margin-bottom: 10px; }
+        .last-updated { color: var(--TEXT_MUTED); margin-bottom: 40px; }
+        h2 { margin-top: 40px; margin-bottom: 20px; font-size: 1.8rem; }
+        h3 { margin-top: 25px; margin-bottom: 10px; color: var(--ACTIVE_ACTION); }
+        p { margin-bottom: 15px; }
+        ul { margin-left: 20px; margin-bottom: 20px; }
+        li { margin-bottom: 8px; }
+        hr { border: 0; border-top: 1px solid var(--PANEL_BORDER); margin: 40px 0; }
+        a { color: var(--ACTIVE_ACTION); }
+
+        .hero-bg {
+            position: absolute;
+            top: 0; left: 0; right: 0; height: 100vh;
+            background: url('../../assets/WIFT_ICON_Cleanpng.png') center 60%/200% no-repeat;
+            opacity: 0.03;
+            filter: blur(2px);
+            z-index: 0;
+            pointer-events: none;
+        }
+
+        /* Footer */
+        footer { padding: 40px 5%; color: var(--TEXT_MUTED); font-size: 0.9rem; border-top: 1px solid var(--PANEL_BORDER); text-align: center; }
+        footer a { color: var(--TEXT_MUTED); text-decoration: none; }
+    </style>
+</head>
+<body>
+
+    <div class="top-bar">
+        <a href="../#features">Features</a> · <a href="../pricing">Pricing</a> · <a href="../privacy">Privacy</a> · <a href="../terms">Terms</a> · <a href="../refund">Refund</a>
+    </div>
+
+    <nav class="main-nav">
+        <div class="logo">WIFT</div>
+        <div class="nav-links">
+            <a href="../#features">Features</a>
+            <a href="../pricing">Pricing</a>
+            <a href="../" class="btn-ghost">Download</a>
+        </div>
+    </nav>
+
+    <div class="hero-bg"></div>
+
+    <main class="content-container">
+        <h1>Privacy Policy</h1>
+        <p class="last-updated"><strong>Last updated:</strong> June 2026</p>
+
+        <hr>
+
+        <h2>1. Who We Are</h2>
+        <p>WIFT ("Where Is That File?") is a desktop media asset management application developed and operated by Peter John Potts, trading as an individual software developer ("we", "us", "our").</p>
+        <p><strong>Contact:</strong><br><a href="mailto:peter.potts.editor@gmail.com">peter.potts.editor@gmail.com</a></p>
+        <p>For any questions about this Privacy Policy or your personal data, contact us at the address above.</p>
+
+        <hr>
+
+        <h2>2. What Data We Collect</h2>
+        <p>We collect minimal personal data. The following describes everything we collect and why.</p>
+
+        <h3>2a. Data you provide directly</h3>
+        <p><strong>Email address</strong><br>Collected when you purchase a WIFT subscription or any WIFT product or feature via our payment processor, Paddle. Used to deliver your licence, send receipts, and contact you about your account.</p>
+
+        <h3>2b. Data collected automatically</h3>
+        <p><strong>Anonymous diagnostic telemetry (beta and v1 only)</strong><br>If you consent at first launch, WIFT sends anonymous technical data to help us identify installation and startup issues. This data contains no personally identifiable information of any kind. It may include:</p>
+        <ul>
+            <li>Operating system type and version (e.g. macOS 14, Windows 11)</li>
+            <li>CPU architecture (e.g. Apple Silicon, x86-64)</li>
+            <li>App version number</li>
+            <li>Installation success or failure event</li>
+            <li>Startup success or failure event</li>
+            <li>Crash reports</li>
+        </ul>
+        <p>No IP address, device identifier, or user identifier of any kind is included. This telemetry is collected only with your explicit consent, given at first launch. You may decline with no loss of functionality. This telemetry will be removed in v2.</p>
+
+        <h3>2c. Data we do not collect</h3>
+        <p>WIFT is a local-first desktop application. We do not:</p>
+        <ul>
+            <li>Access, read, or transmit any of your media files or project data</li>
+            <li>Track your usage behaviour within the application</li>
+            <li>Store any data in the cloud on your behalf</li>
+            <li>Use cookies or web tracking of any kind</li>
+            <li>Sell or share your data with third parties for marketing purposes</li>
+        </ul>
+
+        <hr>
+
+        <h2>3. How We Use Your Data</h2>
+        <p>We use the data we collect only for the following purposes:</p>
+        <p><strong>Email address</strong></p>
+        <ul>
+            <li>To deliver your WIFT licence and activation details</li>
+            <li>To send payment receipts and account notifications</li>
+            <li>To contact you regarding your subscription or purchase</li>
+            <li>To respond to support requests you initiate</li>
+        </ul>
+        <p>We do not use your email address for unsolicited marketing. We will not add you to any mailing list without your explicit consent.</p>
+        <p><strong>Anonymous diagnostic telemetry</strong></p>
+        <ul>
+            <li>To identify and fix installation and startup issues during the beta and v1 periods</li>
+            <li>To understand which operating systems and hardware configurations require additional support</li>
+        </ul>
+        <p>This data is used solely for product improvement. It is never used to identify, profile, or contact individual users.</p>
+
+        <hr>
+
+        <h2>4. Our Lawful Basis for Processing Your Data</h2>
+        <p>Under the UK and EU General Data Protection Regulation (GDPR), we are required to identify a lawful basis for each type of personal data we process.</p>
+        <p><strong>Email address — Contract Performance</strong><br>We process your email address because it is necessary to fulfil the contract between us — delivering the software licence, receipt, and any subscription or account notifications related to your purchase.</p>
+        <p><strong>Transaction records — Legal Obligation</strong><br>We are required by law to retain records of financial transactions for tax and accounting purposes. These records are held securely and not used for any other purpose.</p>
+        <p><strong>Anonymous diagnostic telemetry — Consent</strong><br>We process anonymous diagnostic data only where you have given explicit consent at first launch. As this data contains no personally identifiable information, GDPR does not strictly apply. We include it here for transparency.</p>
+
+        <hr>
+
+        <h2>5. Data Sharing and Third Parties</h2>
+        <p>We do not sell, rent, or share your personal data with third parties for marketing or commercial purposes.</p>
+        <h3>Paddle (Payment Processor and Merchant of Record)</h3>
+        <p>WIFT uses Paddle (paddle.com) as its payment processor and Merchant of Record. This means that when you purchase a WIFT subscription or any WIFT product or feature, your transaction is legally between you and Paddle, not between you and Peter John Potts directly.</p>
+        <p>Paddle collects and processes all payment data on our behalf, including your payment card details, billing address, and transaction history. We do not receive or store your payment card details at any point.</p>
+        <p>Paddle shares your email address with us solely for the purpose of licence delivery and account management.</p>
+        <p>Paddle operates its own Privacy Policy, which governs how it handles your payment data. We recommend you review Paddle's Privacy Policy at <a href="https://paddle.com/legal/privacy">paddle.com/legal/privacy</a> before making a purchase.</p>
+        <p>As Merchant of Record, Paddle is also responsible for handling refund requests. Please refer to our Refund Policy for details.</p>
+        <h3>Diagnostic Service Provider</h3>
+        <p>If you consent to anonymous diagnostic telemetry at first launch, anonymised technical data is transmitted securely to our diagnostic service provider. This data contains no personally identifiable information and is used solely for product improvement purposes.</p>
+        <h3>Legal Disclosure</h3>
+        <p>We may disclose personal data if required to do so by law, or in response to valid legal process from competent authorities.</p>
+
+        <hr>
+
+        <h2>6. Data Retention</h2>
+        <p>We retain your personal data only for as long as necessary for the purposes for which it was collected.</p>
+        <p><strong>Email address</strong><br>Retained for the duration of your subscription or licence, and for a reasonable period thereafter in case of support requests or disputes. If you request deletion of your email address and have no active subscription or outstanding transactions, we will delete it promptly.</p>
+        <p><strong>Transaction records</strong><br>Retained for a minimum of six years from the date of transaction, as required by UK tax law. These records cannot be deleted on request during this period due to our legal obligation to retain them.</p>
+        <p><strong>Anonymous diagnostic telemetry</strong><br>As this data contains no personally identifiable information, retention periods do not apply. Individual diagnostic reports may be retained indefinitely for product improvement purposes.</p>
+
+        <hr>
+
+        <h2>7. Your Rights</h2>
+        <p>Under UK and EU GDPR, you have the following rights regarding your personal data:</p>
+        <p><strong>Right to access</strong><br>You may request a copy of the personal data we hold about you at any time.</p>
+        <p><strong>Right to rectification</strong><br>If any personal data we hold about you is inaccurate or incomplete, you may request that we correct it.</p>
+        <p><strong>Right to erasure</strong><br>You may request that we delete your personal data. We will comply promptly unless we are required to retain it by law (see Section 6).</p>
+        <p><strong>Right to restriction of processing</strong><br>You may request that we limit how we use your personal data while a dispute or correction request is being resolved.</p>
+        <p><strong>Right to data portability</strong><br>Where we process your data on the basis of contract performance, you may request that we provide it to you in a commonly used, machine-readable format.</p>
+        <p><strong>Right to object</strong><br>You may object to our processing of your personal data at any time. We will cease processing unless we have compelling legitimate grounds to continue.</p>
+        <p><strong>Right to withdraw consent</strong><br>Where processing is based on your consent (diagnostic telemetry), you may withdraw that consent at any time via the WIFT application settings. Withdrawal of consent does not affect the lawfulness of processing carried out before withdrawal.</p>
+        <p><strong>Right to lodge a complaint</strong><br>If you believe we have handled your personal data unlawfully, you have the right to lodge a complaint with your national data protection authority. In the UK this is the Information Commissioner's Office (ICO) at <a href="https://ico.org.uk">ico.org.uk</a>. EU users may contact their local supervisory authority.</p>
+        <p><strong>Users outside the UK and EU</strong><br>We apply the same data protection standards to all users regardless of location. Users outside the UK and EU may have additional rights under their local laws. Contact us at <a href="mailto:peter.potts.editor@gmail.com">peter.potts.editor@gmail.com</a> with any privacy enquiries.</p>
+        <p>To exercise any of the above rights, contact us at: <a href="mailto:peter.potts.editor@gmail.com">peter.potts.editor@gmail.com</a></p>
+        <p>We will respond to all requests within 30 days.</p>
+
+        <hr>
+
+        <h2>8. Security</h2>
+        <p>We take reasonable technical and organisational measures to protect your personal data against unauthorised access, loss, or disclosure.</p>
+        <p>Specifically:</p>
+        <ul>
+            <li>Payment data is handled exclusively by Paddle and is never transmitted to or stored by us</li>
+            <li>Any personal data we hold (primarily your email address) is stored securely and accessed only by Peter John Potts</li>
+            <li>Anonymous diagnostic telemetry is transmitted over encrypted connections (HTTPS)</li>
+            <li>WIFT itself is a local-first application — your media files and project data never leave your machine</li>
+        </ul>
+        <p>We cannot guarantee absolute security of data transmitted over the internet, but we will notify you promptly in the event of any personal data breach that is likely to affect your rights or freedoms.</p>
+
+        <hr>
+
+        <h2>9. Changes to This Policy</h2>
+        <p>We may update this Privacy Policy from time to time. When we do, we will update the "Last updated" date at the top of this document and, where changes are material, notify you via the WIFT application or by email.</p>
+        <p>Your continued use of WIFT after any changes constitutes acceptance of the updated policy. We recommend reviewing this policy periodically.</p>
+        <p>The current version of this Privacy Policy is always available at: <a href="https://peter-potts-editor.github.io/wift/privacy">peter-potts-editor.github.io/wift/privacy</a></p>
+    </main>
+
+    <footer>
+        <p><a href="../privacy">Privacy Policy</a> · <a href="../terms">Terms & Conditions</a> · <a href="../refund">Refund Policy</a></p>
+        <p>© 2026 Peter Potts · WIFT · Available for macOS and Windows</p>
+    </footer>
+
+</body>
+</html>
