@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WIFT - Pricing</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --PRIMARY_BG: #12161A;
+            --PANEL_BORDER: #1F262E;
+            --UI_PROGRESS: #00A896;
+            --ACTIVE_ACTION: #00E5FF;
+            --TEXT_MAIN: #E2E8F0;
+            --TEXT_MUTED: #64748B;
+            --SURFACE_3: #0A0D12;
+            --BORDER_MID: #1E2730;
+            --BORDER_RAISED: #2A3545;
+            --RADIUS_SM: 6px;
+            --RADIUS_MD: 10px;
+            --RADIUS_LG: 16px;
+            --ACTIVE_GLOW: 0 0 10px rgba(0, 229, 255, 0.3);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+            font-family: 'Roboto Condensed', sans-serif; 
+            background-color: var(--PRIMARY_BG);
+            position: relative;
+            color: var(--TEXT_MAIN);
+            line-height: 1.6;
+        }
+
+        .top-bar {
+            background: var(--SURFACE_3);
+            padding: 8px 5%;
+            border-bottom: 1px solid var(--PANEL_BORDER);
+            font-size: 0.85rem;
+            color: var(--TEXT_MUTED);
+            display: flex;
+            justify-content: flex-end;
+            gap: 20px;
+        }
+        .top-bar a { color: var(--TEXT_MUTED); text-decoration: none; }
+
+        .main-nav {
+            position: sticky;
+            top: 0;
+            background: transparent;
+            padding: 15px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 100;
+        }
+        .logo { font-weight: 700; font-size: 1.5rem; }
+        .nav-links { display: flex; align-items: center; gap: 25px; }
+        .nav-links a { text-decoration: none; color: var(--TEXT_MAIN); }
+        .btn-ghost {
+            border: 1px solid var(--ACTIVE_ACTION);
+            padding: 8px 16px;
+            border-radius: var(--RADIUS_SM);
+            color: var(--ACTIVE_ACTION);
+            transition: all 0.3s;
+        }
+        .btn-ghost:hover { background: var(--ACTIVE_ACTION); color: var(--PRIMARY_BG); }
+
+        .hero-bg {
+            position: absolute;
+            top: 0; left: 0; right: 0; height: 100vh;
+            background: url('../../assets/WIFT_ICON_Cleanpng.png') center 60%/200% no-repeat;
+            opacity: 0.03;
+            filter: blur(2px);
+            z-index: 0;
+        }
+        @media (max-width: 768px) {
+            .hero-bg { background-size: 120%; background-position: center 30%; }
+        }
+
+        .hero { padding: 60px 5% 40px; text-align: center; position: relative; }
+        .hero-content { position: relative; z-index: 1; }
+        h1 { font-size: 3.5rem; margin-bottom: 10px; }
+
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            padding: 40px 5%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .feature-card { 
+            padding: 30px; 
+            border: 1px solid var(--BORDER_RAISED); 
+            background: rgba(28, 34, 40, 0.9);
+            border-radius: var(--RADIUS_MD);
+            box-shadow: inset 0 0 20px rgba(0, 229, 255, 0.04), inset 0 2px 6px rgba(0, 0, 0, 0.4), 0 8px 24px rgba(0, 0, 0, 0.45);
+        }
+        .feature-card h2 { margin-bottom: 15px; }
+        .price-tag { font-size: 1.5rem; font-weight: 700; color: var(--ACTIVE_ACTION); margin-bottom: 10px; }
+        .feature-card ul { list-style: none; margin-top: 20px; }
+        .feature-card li { margin-bottom: 10px; font-size: 0.9rem; color: var(--TEXT_MUTED); }
+
+        .one-time-section { padding: 40px 5%; text-align: center; }
+        table { width: 100%; max-width: 800px; margin: 30px auto; border-collapse: collapse; background: var(--SURFACE_3); border-radius: var(--RADIUS_MD); overflow: hidden; }
+        th, td { padding: 15px; border-bottom: 1px solid var(--BORDER_MID); text-align: left; }
+        
+        footer { padding: 40px 5%; color: var(--TEXT_MUTED); font-size: 0.9rem; border-top: 1px solid var(--PANEL_BORDER); text-align: center; }
+        footer a { color: var(--TEXT_MUTED); text-decoration: none; }
+    </style>
+</head>
+<body>
+
+    <div class="top-bar">
+        <a href="/wift/#features">Features</a> · <a href="/wift/pricing">Pricing</a> · <a href="/wift/privacy">Privacy</a> · <a href="/wift/terms">Terms</a> · <a href="/wift/refund">Refund</a>
+    </div>
+
+    <nav class="main-nav">
+        <div class="logo">WIFT</div>
+        <div class="nav-links">
+            <a href="/wift/#features">Features</a>
+            <a href="/wift/pricing">Pricing</a>
+            <a href="#" class="btn-ghost">Download</a>
+        </div>
+    </nav>
+
+    <div class="hero-bg"></div>
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Simple pricing. Start free.</h1>
+            <p class="subtitle" style="font-size: 1.2rem;">WIFT is free to use for core drive management. Add features as you need them.</p>
+        </div>
+    </header>
+
+    <section class="pricing-grid">
+        <div class="feature-card">
+            <h2>Free</h2>
+            <div class="price-tag">$0 forever</div>
+            <p>Everything you need to index, search, and navigate your drives.</p>
+            <ul>
+                <li>Drive Indexing</li>
+                <li>Offline Search</li>
+                <li>Miller Column Navigation</li>
+                <li>Drive Status Monitoring</li>
+                <li>Deep Scan</li>
+                <li>Library Integration</li>
+            </ul>
+        </div>
+        <div class="feature-card">
+            <h2>Pro</h2>
+            <div class="price-tag">$10/month · $100/year</div>
+            <p><strong>2 seats included.</strong> For working editors who need broadcast-ready exports. Everything in Free, plus:</p>
+            <ul>
+                <li>Music Cue Sheet Export (included)</li>
+                <li>Stock Clearance Log (included)</li>
+            </ul>
+        </div>
+        <div class="feature-card">
+            <h2>Facility</h2>
+            <div class="price-tag">$80/month · $800/year</div>
+            <p><strong>5 seats minimum.</strong> For post facilities managing multiple editors and shared drive libraries. Everything in Pro, plus:</p>
+            <ul>
+                <li>Database Export (included)</li>
+                <li>Fungible seat allocation across your team</li>
+            </ul>
+        </div>
+        <div class="feature-card">
+    <h2>Studio</h2>
+    <div class="price-tag">$200/month · $2,000/year</div>
+    <p><strong>Named users — contact for licensing.</strong> For larger operations with bespoke needs. Everything in Facility, plus:</p>
+            <ul>
+                <li>Direct licensing conversation</li>
+                <li>Studio-scale seat arrangement</li>
+            </ul>
+            <br>
+            <a href="mailto:wift.support@gmail.com" style="color: var(--ACTIVE_ACTION); font-weight: bold;">Get in touch →</a>
+        </div>
+    </section>
+
+    <section class="one-time-section">
+        <h2>Pay once to export. Upgrade, it's included.</h2>
+        <p style="color: var(--TEXT_MUTED);">All one-time purchases are available from your first install. Upgrade to the relevant tier and they're part of what you get.</p>
+        <table>
+            <thead><tr><th>Feature</th><th>Price</th><th>Free from</th></tr></thead>
+            <tbody>
+                <tr><td>Music Cue Sheet Export</td><td>$5 one-time</td><td>Pro</td></tr>
+                <tr><td>Stock Clearance Log</td><td>$5 one-time</td><td>Pro</td></tr>
+                <tr><td>Database Export</td><td>$1 one-time</td><td>Facility</td></tr>
+            </tbody>
+        </table>
+    </section>
+
+    <footer>
+        <p style="margin-bottom: 20px;">
+            Start free. WIFT doesn't ask for a card until you need a feature that requires one.<br>
+            Early adopters are grandfathered at their entry price point.
+        </p>
+        <p><a href="/wift/privacy">Privacy Policy</a> · <a href="/wift/terms">Terms & Conditions</a> · <a href="/wift/refund">Refund Policy</a></p>
+        <p>© 2026 Peter Potts · WIFT · Available for macOS and Windows</p>
+    </footer>
+
+</body>
+</html>
