@@ -10,6 +10,7 @@
             --PRIMARY_BG: #12161A;
             --PANEL_BORDER: #1F262E;
             --ACTIVE_ACTION: #00E5FF;
+            --ACCENT_SOFT: #4DEDFF;
             --TEXT_MAIN: #E2E8F0;
             --TEXT_MUTED: #64748B;
             --SURFACE_3: #0A0D12;
@@ -65,17 +66,18 @@
 
         /* Content Container */
         .content-container {
-            max-width: 800px;
-            margin: 40px auto;
-            padding: 0 5%;
+            max-width: 720px;
+            margin: 60px auto;
+            padding: 0 20px;
         }
+        h1 { font-size: 3rem; margin-bottom: 10px; }
+        h2 { font-size: 1.8rem; color: var(--ACCENT_SOFT); margin-top: 40px; margin-bottom: 20px; }
+        h3 { font-size: 1.3rem; color: var(--ACCENT_SOFT); margin-top: 25px; margin-bottom: 10px; }
         .subtitle { color: var(--TEXT_MUTED); margin-bottom: 40px; }
-        h1 { margin-bottom: 20px; }
-        h2 { margin: 30px 0 15px 0; color: var(--ACTIVE_ACTION); }
         p { margin-bottom: 15px; }
         ul { margin-bottom: 15px; padding-left: 20px; }
         li { margin-bottom: 10px; }
-        hr { border: 0; border-top: 1px solid var(--PANEL_BORDER); margin: 30px 0; }
+        hr { border: 0; border-top: 1px solid var(--PANEL_BORDER); margin: 40px 0; }
 
         /* Footer */
         footer { padding: 40px 5%; color: var(--TEXT_MUTED); font-size: 0.9rem; border-top: 1px solid var(--PANEL_BORDER); text-align: center; }
@@ -136,5 +138,3 @@
 
 </body>
 </html>
-
-```
